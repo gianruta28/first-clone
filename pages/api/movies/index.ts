@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-import primsadb from "@/lib/prismadb";
-import serverAuth from "@/lib/serverAuth";
+import primsadb from "@/libs/prismadb";
+import serverAuth from "@/libs/serverAuth";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if(req.method !== 'GET')
