@@ -7,9 +7,6 @@ import useCurrentUser from "@/hooks/useCurrentUser";
 
 const images = [
   '/images/default-blue.png',
-  '/images/default-red.png',
-  '/images/default-slate.png',
-  '/images/default-green.png'
 ]
 
 interface UserCardProps {
@@ -17,17 +14,19 @@ interface UserCardProps {
 }
 
 export async function getServerSideProps(context: NextPageContext) {
+  
   const session = await getSession(context);
+  
 
-  if (!session) {
+  if(!session){
     return {
       redirect: {
-        destination: '/auth',
-        permanent: false,
+      destination: '/auth',
+      permanent: false
       }
     }
   }
-
+  
   return {
     props: {}
   }
