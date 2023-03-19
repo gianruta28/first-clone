@@ -7,6 +7,9 @@ import useCurrentUser from "@/hooks/useCurrentUser";
 
 const images = [
   '/img/default-blue.png',
+  '/img/default-green.png',
+  '/img/default-red.png',
+  '/img/default-slate.png',
 ]
 
 interface UserCardProps {
