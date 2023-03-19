@@ -15,12 +15,12 @@ export async function getServerSideProps(context: NextPageContext) {
   if(!session){
     console.log('testa');
     
-    // return {
-    //   redirect: {
-    //   destination: '/auth',
-    //   permanent: false
-    //   }
-    // }
+    return {
+      redirect: {
+      destination: '/auth',
+      permanent: false
+      }
+    }
   }
   
   return {
