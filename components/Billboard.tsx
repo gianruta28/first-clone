@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { InformationCircleIcon } from '@heroicons/react/24/outline';
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 import PlayButton from '@/components/PlayButton';
 import useBillboard from '@/hooks/useBillboard';
@@ -46,8 +46,8 @@ const Billboard: React.FC = () => {
               transition
             "
             >
-              <InformationCircleIcon className="w-4 md:w-7 mr-1" />
-              More Info
+              <AiOutlineInfoCircle className="mr-2"/> 
+                            More Info
           </button>
         </div>
       </div>
