@@ -23,6 +23,8 @@ export async function getServerSideProps(context: NextPageContext) {
       }
     }
     
+    console.log('testi');
+    
     return {
       props: {}
     }
