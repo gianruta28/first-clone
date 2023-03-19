@@ -46,8 +46,8 @@ const Billboard: React.FC = () => {
               transition
             "
             >
-              <AiOutlineInfoCircle className="mr-2"/> 
-                            More Info
+              <InformationCircleIcon className="w-4 md:w-7 mr-1" />
+              More Info
           </button>
         </div>
       </div>
