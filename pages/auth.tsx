@@ -29,6 +29,7 @@ export async function getServerSideProps(context: NextPageContext) {
   }
 
 const Auth = () => {
+    const router = useRouter();
 
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
@@ -45,12 +46,14 @@ const Auth = () => {
             await signIn('credentials', {
                 email,
                 password,
+                redirect: false,
                 callbackUrl: '/profiles'
             });
+            router.push('/profiles');
         } catch (error) {
             console.log(error);
         }
-    }, [email, password])
+    }, [email, password, router])
 
     const register = useCallback( async () => {
         try {
